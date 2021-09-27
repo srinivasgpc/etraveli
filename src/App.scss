@@ -1,0 +1,65 @@
+.films {
+  height: 100vh;
+  &_main {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  &_title {
+    display: flex;
+    flex-direction: row;
+  }
+  &_list {
+    border-right: 1px solid #cecece;
+    li {
+      cursor: pointer;
+      border-bottom: 1px solid #cecece;
+      padding: 20px;
+      display: flex;
+      font-size: 12px;
+      div:nth-child(1) {
+        color: #465c71;
+      }
+      div:nth-child(2) {
+        flex-grow: 1;
+      }
+    }
+  }
+  .MuiListItemText-root {
+    text-align: right;
+  }
+  &_sub_title {
+    margin-right: 15px;
+  }
+  &_filters {
+    padding: 15px;
+    border-bottom: 1px solid #cecece;
+    background: #f6f8fa;
+    &_main {
+      display: flex;
+      width: 100%;
+
+      &_1 {
+        width: 30%;
+        margin-right: 10px !important;
+        background: #fff;
+      }
+      &_2 {
+        width: 70%;
+        background: #fff;
+      }
+    }
+  }
+  &_data {
+    padding: 25px;
+    p:nth-child(2) {
+      color: #465c71;
+    }
+  }
+  &_no_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
